@@ -3,8 +3,8 @@ kind: Deployment
 metadata:
   creationTimestamp: null
   labels:
-    app: flaskdemo
-  name: flaskdemo
+    app: nodedemo
+  name: nodedemo
 spec:
   replicas: 3
   selector:
@@ -15,11 +15,11 @@ spec:
     metadata:
       creationTimestamp: null
       labels:
-        app: flaskdemo
+        app: nodedemo
     spec:
       containers:
-      - image: raj80dockerid/test:6
-        name: flaskdemo
+      - image: manmeetpannu/node-app:6
+        name: nodedemo
         resources: {}
 status: {}
 ---
